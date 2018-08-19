@@ -7,9 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		820BCC96B49E1276F0CF78A5 /* Pods_LunchTime_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EEAEE6BF267152D5397CCEE /* Pods_LunchTime_iOS.framework */; };
+		C766B304704E8D289B4DE7F1 /* Pods_LunchTime_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43FA0ABE4A392AD4AD99EEFF /* Pods_LunchTime_iOSTests.framework */; };
+		E65845B90B9ED0E85CDC5571 /* Pods_LunchTime_iOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9EBAA1A2D3F422B02D6CC57 /* Pods_LunchTime_iOSUITests.framework */; };
+		EC2634F821230868009A5D5F /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2634F721230868009A5D5F /* Coordinator.swift */; };
+		EC2634FA212308A9009A5D5F /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2634F9212308A9009A5D5F /* MainCoordinator.swift */; };
+		EC2634FC21230B85009A5D5F /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2634FB21230B85009A5D5F /* UIViewControllerExtensions.swift */; };
+		EC2634FF21230FE5009A5D5F /* FeedCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2634FE21230FE5009A5D5F /* FeedCoordinator.swift */; };
+		EC263501212310B1009A5D5F /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC263500212310B1009A5D5F /* BaseNavigationController.swift */; };
+		EC26350521231EBF009A5D5F /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC26350421231EBF009A5D5F /* FeedViewController.swift */; };
+		EC26350721231F34009A5D5F /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC26350621231F34009A5D5F /* BaseViewController.swift */; };
+		EC26350B2124115A009A5D5F /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC26350A2124115A009A5D5F /* FeedCell.swift */; };
+		EC26350D212419EE009A5D5F /* hotReloading.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC26350C212419EE009A5D5F /* hotReloading.swift */; };
+		EC4C968C2126F19400F0B287 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4C968B2126F19400F0B287 /* MapViewController.swift */; };
+		EC4C968E2126F19F00F0B287 /* MapViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4C968D2126F19F00F0B287 /* MapViewCoordinator.swift */; };
+		EC4C96902126F1A800F0B287 /* MapViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC4C968F2126F1A800F0B287 /* MapViewController.storyboard */; };
+		EC4C96922126F77800F0B287 /* FeedViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC4C96912126F77700F0B287 /* FeedViewController.storyboard */; };
 		EC8AF841211C8F2000ACF8E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8AF840211C8F2000ACF8E0 /* AppDelegate.swift */; };
-		EC8AF843211C8F2000ACF8E0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8AF842211C8F2000ACF8E0 /* ViewController.swift */; };
-		EC8AF846211C8F2000ACF8E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC8AF844211C8F2000ACF8E0 /* Main.storyboard */; };
 		EC8AF848211C8F2300ACF8E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC8AF847211C8F2300ACF8E0 /* Assets.xcassets */; };
 		EC8AF84B211C8F2300ACF8E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC8AF849211C8F2300ACF8E0 /* LaunchScreen.storyboard */; };
 		EC8AF856211C8F2300ACF8E0 /* LunchTime_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8AF855211C8F2300ACF8E0 /* LunchTime_iOSTests.swift */; };
@@ -34,10 +48,32 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4339C252F7F87A08EBE1CBB4 /* Pods-LunchTime_iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LunchTime_iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LunchTime_iOS/Pods-LunchTime_iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		43FA0ABE4A392AD4AD99EEFF /* Pods_LunchTime_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LunchTime_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		479010533C3F5D1B0FA0846B /* Pods-LunchTime_iOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LunchTime_iOSUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LunchTime_iOSUITests/Pods-LunchTime_iOSUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5675F83C6E080F8C31A05A9C /* Pods-LunchTime_iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LunchTime_iOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-LunchTime_iOSTests/Pods-LunchTime_iOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		579CE5F8C545F9B01AC7ED82 /* Pods-LunchTime_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LunchTime_iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-LunchTime_iOS/Pods-LunchTime_iOS.release.xcconfig"; sourceTree = "<group>"; };
+		7EEAEE6BF267152D5397CCEE /* Pods_LunchTime_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LunchTime_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9EBAA1A2D3F422B02D6CC57 /* Pods_LunchTime_iOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LunchTime_iOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D65B33879007FD2904E82EFA /* Pods-LunchTime_iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LunchTime_iOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LunchTime_iOSTests/Pods-LunchTime_iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DA6B13FFB8D12EFF85D1BE94 /* Pods-LunchTime_iOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LunchTime_iOSUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LunchTime_iOSUITests/Pods-LunchTime_iOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		EC2634F721230868009A5D5F /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		EC2634F9212308A9009A5D5F /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		EC2634FB21230B85009A5D5F /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
+		EC2634FE21230FE5009A5D5F /* FeedCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCoordinator.swift; sourceTree = "<group>"; };
+		EC263500212310B1009A5D5F /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		EC26350421231EBF009A5D5F /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		EC26350621231F34009A5D5F /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		EC26350821231F5F009A5D5F /* FeedViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FeedViewController.storyboard; sourceTree = "<group>"; };
+		EC26350A2124115A009A5D5F /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		EC26350C212419EE009A5D5F /* hotReloading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hotReloading.swift; sourceTree = "<group>"; };
+		EC4C96812126F12800F0B287 /* LunchTime_iOS */ = {isa = PBXFileReference; lastKnownFileType = folder; name = LunchTime_iOS; sourceTree = "<group>"; };
+		EC4C968B2126F19400F0B287 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		EC4C968D2126F19F00F0B287 /* MapViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewCoordinator.swift; sourceTree = "<group>"; };
+		EC4C968F2126F1A800F0B287 /* MapViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MapViewController.storyboard; sourceTree = "<group>"; };
+		EC4C96912126F77700F0B287 /* FeedViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = FeedViewController.storyboard; path = LunchTime_iOS/Feed/FeedViewController.storyboard; sourceTree = "<group>"; };
 		EC8AF83D211C8F2000ACF8E0 /* LunchTime_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LunchTime_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC8AF840211C8F2000ACF8E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EC8AF842211C8F2000ACF8E0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EC8AF845211C8F2000ACF8E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EC8AF847211C8F2300ACF8E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC8AF84A211C8F2300ACF8E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC8AF84C211C8F2300ACF8E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -54,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				820BCC96B49E1276F0CF78A5 /* Pods_LunchTime_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C766B304704E8D289B4DE7F1 /* Pods_LunchTime_iOSTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,19 +106,66 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E65845B90B9ED0E85CDC5571 /* Pods_LunchTime_iOSUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B9376222BB2CD0E95535647 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7EEAEE6BF267152D5397CCEE /* Pods_LunchTime_iOS.framework */,
+				43FA0ABE4A392AD4AD99EEFF /* Pods_LunchTime_iOSTests.framework */,
+				C9EBAA1A2D3F422B02D6CC57 /* Pods_LunchTime_iOSUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B98676F214951C91F9839418 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4339C252F7F87A08EBE1CBB4 /* Pods-LunchTime_iOS.debug.xcconfig */,
+				579CE5F8C545F9B01AC7ED82 /* Pods-LunchTime_iOS.release.xcconfig */,
+				D65B33879007FD2904E82EFA /* Pods-LunchTime_iOSTests.debug.xcconfig */,
+				5675F83C6E080F8C31A05A9C /* Pods-LunchTime_iOSTests.release.xcconfig */,
+				DA6B13FFB8D12EFF85D1BE94 /* Pods-LunchTime_iOSUITests.debug.xcconfig */,
+				479010533C3F5D1B0FA0846B /* Pods-LunchTime_iOSUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EC2634FD21230BC5009A5D5F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EC2634FB21230B85009A5D5F /* UIViewControllerExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EC4C96832126F12D00F0B287 /* MapView */ = {
+			isa = PBXGroup;
+			children = (
+				EC4C968D2126F19F00F0B287 /* MapViewCoordinator.swift */,
+				EC4C968B2126F19400F0B287 /* MapViewController.swift */,
+				EC4C968F2126F1A800F0B287 /* MapViewController.storyboard */,
+			);
+			name = MapView;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		EC8AF834211C8F2000ACF8E0 = {
 			isa = PBXGroup;
 			children = (
+				EC4C96912126F77700F0B287 /* FeedViewController.storyboard */,
 				EC8AF83F211C8F2000ACF8E0 /* LunchTime_iOS */,
+				EC4C96812126F12800F0B287 /* LunchTime_iOS */,
 				EC8AF854211C8F2300ACF8E0 /* LunchTime_iOSTests */,
 				EC8AF85F211C8F2300ACF8E0 /* LunchTime_iOSUITests */,
 				EC8AF83E211C8F2000ACF8E0 /* Products */,
+				B98676F214951C91F9839418 /* Pods */,
+				1B9376222BB2CD0E95535647 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +182,16 @@
 		EC8AF83F211C8F2000ACF8E0 /* LunchTime_iOS */ = {
 			isa = PBXGroup;
 			children = (
-				EC8AF840211C8F2000ACF8E0 /* AppDelegate.swift */,
-				EC8AF842211C8F2000ACF8E0 /* ViewController.swift */,
-				EC8AF844211C8F2000ACF8E0 /* Main.storyboard */,
-				EC8AF847211C8F2300ACF8E0 /* Assets.xcassets */,
-				EC8AF849211C8F2300ACF8E0 /* LaunchScreen.storyboard */,
 				EC8AF84C211C8F2300ACF8E0 /* Info.plist */,
+				EC8AF840211C8F2000ACF8E0 /* AppDelegate.swift */,
+				EC26350C212419EE009A5D5F /* hotReloading.swift */,
+				ECF72447212636AB006BB2EA /* Base */,
+				EC2634FD21230BC5009A5D5F /* Extensions */,
+				ECF7244821263700006BB2EA /* LaunchScreen */,
+				ECF724462126364E006BB2EA /* MainCoordinator */,
+				ECF72445212635FB006BB2EA /* Feed */,
+				EC4C96832126F12D00F0B287 /* MapView */,
+				EC8AF847211C8F2300ACF8E0 /* Assets.xcassets */,
 			);
 			path = LunchTime_iOS;
 			sourceTree = "<group>";
@@ -125,6 +214,43 @@
 			path = LunchTime_iOSUITests;
 			sourceTree = "<group>";
 		};
+		ECF72445212635FB006BB2EA /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				EC2634FE21230FE5009A5D5F /* FeedCoordinator.swift */,
+				EC26350421231EBF009A5D5F /* FeedViewController.swift */,
+				EC26350A2124115A009A5D5F /* FeedCell.swift */,
+				EC26350821231F5F009A5D5F /* FeedViewController.storyboard */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		ECF724462126364E006BB2EA /* MainCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				EC2634F9212308A9009A5D5F /* MainCoordinator.swift */,
+				EC2634F721230868009A5D5F /* Coordinator.swift */,
+			);
+			path = MainCoordinator;
+			sourceTree = "<group>";
+		};
+		ECF72447212636AB006BB2EA /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				EC26350621231F34009A5D5F /* BaseViewController.swift */,
+				EC263500212310B1009A5D5F /* BaseNavigationController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		ECF7244821263700006BB2EA /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				EC8AF849211C8F2300ACF8E0 /* LaunchScreen.storyboard */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +258,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EC8AF865211C8F2300ACF8E0 /* Build configuration list for PBXNativeTarget "LunchTime_iOS" */;
 			buildPhases = (
+				753C2AC3E5E390CC5D706751 /* [CP] Check Pods Manifest.lock */,
 				EC8AF839211C8F2000ACF8E0 /* Sources */,
 				EC8AF83A211C8F2000ACF8E0 /* Frameworks */,
 				EC8AF83B211C8F2000ACF8E0 /* Resources */,
+				9ED785B4DF20D54526927D93 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,6 +277,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EC8AF868211C8F2300ACF8E0 /* Build configuration list for PBXNativeTarget "LunchTime_iOSTests" */;
 			buildPhases = (
+				A21CDCFFB250218097900B8A /* [CP] Check Pods Manifest.lock */,
 				EC8AF84D211C8F2300ACF8E0 /* Sources */,
 				EC8AF84E211C8F2300ACF8E0 /* Frameworks */,
 				EC8AF84F211C8F2300ACF8E0 /* Resources */,
@@ -167,6 +296,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EC8AF86B211C8F2300ACF8E0 /* Build configuration list for PBXNativeTarget "LunchTime_iOSUITests" */;
 			buildPhases = (
+				47EF0BA701216F3199E0E903 /* [CP] Check Pods Manifest.lock */,
 				EC8AF858211C8F2300ACF8E0 /* Sources */,
 				EC8AF859211C8F2300ACF8E0 /* Frameworks */,
 				EC8AF85A211C8F2300ACF8E0 /* Resources */,
@@ -229,9 +359,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC4C96922126F77800F0B287 /* FeedViewController.storyboard in Resources */,
+				EC4C96902126F1A800F0B287 /* MapViewController.storyboard in Resources */,
 				EC8AF84B211C8F2300ACF8E0 /* LaunchScreen.storyboard in Resources */,
 				EC8AF848211C8F2300ACF8E0 /* Assets.xcassets in Resources */,
-				EC8AF846211C8F2000ACF8E0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,13 +382,100 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		47EF0BA701216F3199E0E903 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LunchTime_iOSUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		753C2AC3E5E390CC5D706751 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LunchTime_iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9ED785B4DF20D54526927D93 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LunchTime_iOS/Pods-LunchTime_iOS-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LunchTime_iOS/Pods-LunchTime_iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A21CDCFFB250218097900B8A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LunchTime_iOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EC8AF839211C8F2000ACF8E0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC8AF843211C8F2000ACF8E0 /* ViewController.swift in Sources */,
+				EC4C968C2126F19400F0B287 /* MapViewController.swift in Sources */,
+				EC26350B2124115A009A5D5F /* FeedCell.swift in Sources */,
+				EC263501212310B1009A5D5F /* BaseNavigationController.swift in Sources */,
+				EC2634FA212308A9009A5D5F /* MainCoordinator.swift in Sources */,
+				EC4C968E2126F19F00F0B287 /* MapViewCoordinator.swift in Sources */,
+				EC2634FC21230B85009A5D5F /* UIViewControllerExtensions.swift in Sources */,
 				EC8AF841211C8F2000ACF8E0 /* AppDelegate.swift in Sources */,
+				EC26350721231F34009A5D5F /* BaseViewController.swift in Sources */,
+				EC2634FF21230FE5009A5D5F /* FeedCoordinator.swift in Sources */,
+				EC26350521231EBF009A5D5F /* FeedViewController.swift in Sources */,
+				EC2634F821230868009A5D5F /* Coordinator.swift in Sources */,
+				EC26350D212419EE009A5D5F /* hotReloading.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,14 +511,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		EC8AF844211C8F2000ACF8E0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EC8AF845211C8F2000ACF8E0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EC8AF849211C8F2300ACF8E0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -428,9 +638,11 @@
 		};
 		EC8AF866211C8F2300ACF8E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4339C252F7F87A08EBE1CBB4 /* Pods-LunchTime_iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = LunchTime_iOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -445,9 +657,11 @@
 		};
 		EC8AF867211C8F2300ACF8E0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 579CE5F8C545F9B01AC7ED82 /* Pods-LunchTime_iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = LunchTime_iOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -462,6 +676,7 @@
 		};
 		EC8AF869211C8F2300ACF8E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D65B33879007FD2904E82EFA /* Pods-LunchTime_iOSTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -482,6 +697,7 @@
 		};
 		EC8AF86A211C8F2300ACF8E0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5675F83C6E080F8C31A05A9C /* Pods-LunchTime_iOSTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -502,6 +718,7 @@
 		};
 		EC8AF86C211C8F2300ACF8E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA6B13FFB8D12EFF85D1BE94 /* Pods-LunchTime_iOSUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -521,6 +738,7 @@
 		};
 		EC8AF86D211C8F2300ACF8E0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 479010533C3F5D1B0FA0846B /* Pods-LunchTime_iOSUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

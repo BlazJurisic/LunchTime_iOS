@@ -7,15 +7,25 @@
 //
 
 import UIKit
+import GoogleMaps
+import GooglePlaces
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var rootCoordinator: Coordinator?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        rootCoordinator = MainCoordinator()
+        rootCoordinator?.start()
         // Override point for customization after application launch.
+        Bundle(path: "/Applications/InjectionIII.app/Contents/Resources/iOSInjection.bundle")!.load()
+        GMSServices.provideAPIKey("AIzaSyAHB68ABb1HajY3wkBJJI3BjFwNkh3p-VI")
+        GMSPlacesClient.provideAPIKey("AIzaSyAHB68ABb1HajY3wkBJJI3BjFwNkh3p-VI")
+
+        
+
         return true
     }
 
