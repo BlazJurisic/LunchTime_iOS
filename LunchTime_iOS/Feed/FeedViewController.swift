@@ -44,9 +44,8 @@ class FeedViewController: BaseViewController {
 }
 
 extension FeedViewController: UITableViewDelegate {
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat
-    {
-        return 150.0;//Choose your custom row height
+   func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 150.0
     }
     
 }
@@ -56,6 +55,7 @@ extension FeedViewController: UITableViewDataSource {
         cell.titleLabel.text = mockDataSource[indexPath.row]
         return cell
     }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return mockDataSource.count
     }

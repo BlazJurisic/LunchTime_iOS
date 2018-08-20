@@ -18,11 +18,9 @@ class BaseViewController: UIViewController {
     
     var navigationBarDisplayMode: NavigationBarDisplayMode = .automatic {
         didSet {
-            
             guard let navigationController = navigationController else {
                 return
             }
-            
             switch navigationBarDisplayMode {
             case .always:
                 navigationController.isNavigationBarHidden = false
@@ -38,7 +36,6 @@ class BaseViewController: UIViewController {
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
-    
 }
 
 extension BaseViewController {
@@ -53,22 +50,14 @@ extension BaseViewController {
     }
     
     private class func createFromStoryboard<T: UIViewController>(type: T.Type) -> T? {
-        
         let storyboardName = String(describing: type)
-        
         let bundle = Bundle(for: T.self)
-        
-        guard bundle.path(forResource: storyboardName, ofType: "storyboardc") != nil else {
+        guard bundle.path(forResource: storyboardName, ofType: "storyboardc") != nil else { return nil }
+        let storyboard = UIStoryboard(name: storyboardName, bundle: bundle)
+        guard let vc = storyboard.instantiateInitialViewController() else {
+            print("no vc in storyboard(hint: check initial vc)")
             return nil
         }
-        
-        let storyboard = UIStoryboard(name: storyboardName, bundle: bundle)
-        
-        guard let vc = storyboard.instantiateInitialViewController() else {
-            print("no vc in storyboard(hint: check initial vc)") ; return nil
-        }
-        
         return vc as? T
     }
-    
 }

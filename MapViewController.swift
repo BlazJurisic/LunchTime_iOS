@@ -11,49 +11,59 @@ import GoogleMaps
 
 final class MapViewController: BaseViewController {
     
-    let mockDataSource = ["grozd", "kiwi", "apple", "mango", "patricia", "blaz", "beer"]
-    
     // MARK: - Outlets
+    @IBOutlet weak var mapView: GMSMapView!
+
+    private var locationManager: CLLocationManager!
     
-    @IBOutlet weak var tableView: UITableView!
-    // MARK: - Navigation callbacks
-    
-    var onShouldGoToActionsList: (() -> Void)?
-    var onShouldGoToCreateAction: (() -> Void)?
-    
-    @IBAction func goToActionsList(_ sender: UIButton) {
-        self.onShouldGoToActionsList?()
+    private func reverseGeocodeCoordinate(_ coordinate: CLLocationCoordinate2D) {
+        let geocoder = GMSGeocoder()
+        geocoder.reverseGeocodeCoordinate(coordinate) { response, error in
+            guard
+                let address = response?.firstResult(),
+                let lines = address.lines
+                else { return }
+            self.title = lines.joined(separator: "\n")
+            UIView.animate(withDuration: 0.25) {
+                self.view.layoutIfNeeded()
+            }
+        }
     }
-    @IBAction func goToCreateAction(_ sender: UIButton) {
-        self.onShouldGoToCreateAction?()
-    }
-    
     
     // MARK: - Lifecycle
     
-    override func loadView() {
-        // Create a GMSCameraPosition that tells the map to display the
-        // coordinate -33.86,151.20 at zoom level 6.
-        let camera = GMSCameraPosition.camera(withLatitude: -33.86, longitude: 151.20, zoom: 6.0)
-        let mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
-        view = mapView
-        
-        // Creates a marker in the center of the map.
-        let marker = GMSMarker()
-        marker.position = CLLocationCoordinate2D(latitude: -33.86, longitude: 151.20)
-        marker.title = "Sydney"
-        marker.snippet = "Australia"
-        marker.map = mapView
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-       
-        //automaticallyAdjustsScrollViewInsets = false
-        
-        // MARK: - UserInteraction
-        
-        
-        
+        locationManager = CLLocationManager()
+        locationManager.delegate = self
+        mapView.delegate = self
+        locationManager.requestWhenInUseAuthorization()
+    }
+}
+
+// MARK: - GMSMapViewDelegate
+extension MapViewController: GMSMapViewDelegate {
+    
+    func mapView(_ mapView: GMSMapView, idleAt position: GMSCameraPosition) {
+        reverseGeocodeCoordinate(position.target)
+    }
+
+}
+
+// MARK: - CLLocationManagerDelegate
+extension MapViewController: CLLocationManagerDelegate {
+    
+    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+        guard status == .authorizedWhenInUse else { return }
+        locationManager.startUpdatingLocation()
+        mapView.isMyLocationEnabled = true
+        mapView.settings.myLocationButton = true
+    
+    }
+
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        guard let location = locations.first else { return }
+        mapView.camera = GMSCameraPosition(target: location.coordinate, zoom: 15, bearing: 0, viewingAngle: 0)
+        locationManager.stopUpdatingLocation()
     }
 }

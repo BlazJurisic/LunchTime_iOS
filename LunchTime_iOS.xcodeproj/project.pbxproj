@@ -67,7 +67,7 @@
 		EC26350821231F5F009A5D5F /* FeedViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FeedViewController.storyboard; sourceTree = "<group>"; };
 		EC26350A2124115A009A5D5F /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		EC26350C212419EE009A5D5F /* hotReloading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hotReloading.swift; sourceTree = "<group>"; };
-		EC4C96812126F12800F0B287 /* LunchTime_iOS */ = {isa = PBXFileReference; lastKnownFileType = folder; name = LunchTime_iOS; sourceTree = "<group>"; };
+		EC4C96812126F12800F0B287 /* LunchTime_iOS */ = {isa = PBXFileReference; lastKnownFileType = folder; path = LunchTime_iOS; sourceTree = "<group>"; };
 		EC4C968B2126F19400F0B287 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		EC4C968D2126F19F00F0B287 /* MapViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewCoordinator.swift; sourceTree = "<group>"; };
 		EC4C968F2126F1A800F0B287 /* MapViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MapViewController.storyboard; sourceTree = "<group>"; };

@@ -57,5 +57,5 @@ extension MainCoordinator {
 
 extension UITabBarItem {
     static let feed = UITabBarItem(title: "searches", image: #imageLiteral(resourceName: "outline_dns_black_18dp"), selectedImage: nil)
-    static let map = UITabBarItem(title: "find", image: #imageLiteral(resourceName: "outline_dns_black_18dp"), selectedImage: nil)
+    static let map = UITabBarItem(title: "find", image: #imageLiteral(resourceName: "baseline_my_location_black_18dp"), selectedImage: nil)
 }

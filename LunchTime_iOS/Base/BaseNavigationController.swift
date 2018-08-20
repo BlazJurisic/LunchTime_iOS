@@ -11,7 +11,7 @@ import UIKit
 class BaseNavigationController: UINavigationController {
     private func customizeNavigationBar() {
         removeShadowFromNavbar()
-        navigationBar.barTintColor = .at_tintColor
+        navigationBar.barTintColor = .tulip
         navigationBar.tintColor = .white
         navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white, .font: UIFont.at_title]
     }
@@ -52,6 +52,9 @@ extension UIFont {
 
 extension UIColor {
 
+    @nonobjc
+    static let tulip = UIColor(red: 255/255.0, green: 146/255.0, blue: 139/255.0, alpha: 1)
+    
     @nonobjc
     static let at_tintColor = UIColor(red: 0/255.0, green: 190/255.0, blue: 223/255.0, alpha: 1)
     
